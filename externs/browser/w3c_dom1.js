@@ -427,6 +427,16 @@ Document.prototype.createTextNode = function(data) {};
 Document.prototype.getElementsByTagName = function(tagname) {};
 
 /**
+ * @param {string} aCommandName
+ * @param {boolean} aShowDefaultUI
+ * @param {string} aValueArgument
+ * @return {boolean}
+ * @see https://www.w3.org/TR/clipboard-apis/
+ * @nosideeffects
+ */
+Document.prototype.execCommand = function(aCommandName, aShowDefaultUI, aValueArgument) {};
+
+/**
  * @constructor
  * @implements {IArrayLike<T>}
  * @implements {Iterable<T>}
